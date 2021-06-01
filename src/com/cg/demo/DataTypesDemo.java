@@ -33,8 +33,9 @@ public class DataTypesDemo {
 		long phone = 9876543210L;
 		System.out.println(phone);
 
+		short s1 = Short.MAX_VALUE;
+		System.out.println(s1);
+
 		String PAN_CARD = "ABCDE1234E";
 	}
 }
-
-
