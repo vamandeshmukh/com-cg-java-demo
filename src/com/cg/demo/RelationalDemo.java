@@ -4,7 +4,7 @@ public class RelationalDemo {
 	
 	public static void main(String[] args) {
 		
-		int num1 = 10, num2 = 20;
+		int num1 = 010, num2 = 20;
 		
 		// (salaryOffered < salaryExpected)  
 		
