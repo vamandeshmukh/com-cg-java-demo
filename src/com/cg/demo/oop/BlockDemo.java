@@ -1,5 +1,7 @@
 package com.cg.demo.oop;
 
+// static and non static blocks 
+
 public class BlockDemo {
 
 	static int num = 10;
