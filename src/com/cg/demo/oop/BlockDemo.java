@@ -5,13 +5,13 @@ public class BlockDemo {
 	static int num = 10;
 
 	public static void main(String[] args) {
+		System.out.println("main");
 
 		BlockDemo obj = new BlockDemo();
 		BlockDemo obj2 = new BlockDemo();
 		BlockDemo obj3 = new BlockDemo();
 
-		System.out.println("main");
-		m1();
+		BlockDemo.m1();
 		System.out.println(num);
 	}
 
