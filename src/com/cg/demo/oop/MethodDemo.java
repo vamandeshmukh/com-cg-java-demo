@@ -20,7 +20,7 @@ public class MethodDemo {
 
 		System.out.println("Start");
 
-		someMethodName();
+//		someMethodName();
 //		someMethodName(10, 20);
 
 		addTwoNumbers(10, 20); // arguments (values in method call)
