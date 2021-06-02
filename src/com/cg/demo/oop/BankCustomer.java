@@ -2,10 +2,10 @@ package com.cg.demo.oop;
 
 // member = method or field 
 
-//access static member in static context - free access - class reference 
-//access static member in non static context - free access - class reference  
-//access non static member in static context - restricted access - object reference  
-//access non static member in non static context - restricted access - ??? reference  
+//1. access static member in static context - free access - class reference 
+//2. access static member in non static context - free access - class reference  
+//3. access non static member in static context - restricted access - object reference  
+//4. access non static member in non static context - restricted access - ??? reference  
 
 public class BankCustomer {
 
@@ -19,15 +19,17 @@ public class BankCustomer {
 
 	// non static context
 	void checkBalance() {
-		System.out.println(BankCustomer.ifsc);
+		System.out.println(ifsc); // 2. 
+		System.out.println(BankCustomer.ifsc); // 2.
 		System.out.println(balance);
 	}
 
 	// static context
 	static void openAccount() {
-		System.out.println(BankCustomer.ifsc);
-		BankCustomer obj = new BankCustomer();
-		System.out.println(obj.balance);
+		System.out.println(ifsc); // 1. 
+		System.out.println(BankCustomer.ifsc); // 1. 
+		BankCustomer obj = new BankCustomer(); // 3. 
+		System.out.println(obj.balance); // 3. 
 		System.out.println("Open an account.");
 	}
 
