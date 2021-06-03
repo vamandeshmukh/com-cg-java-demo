@@ -5,7 +5,7 @@ package com.cg.demo.oop;
 //1. access static member in static context - free access - class reference 
 //2. access static member in non static context - free access - class reference  
 //3. access non static member in static context - restricted access - object reference  
-//4. access non static member in non static context - restricted access - ??? reference  
+//4. access non static member in non static context - restricted access - this reference  
 
 public class BankCustomer {
 

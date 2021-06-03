@@ -28,5 +28,10 @@ public class App {
 		Employee obj4 = new Employee(104, "Ddd", 45.85);
 		System.out.println(obj4.toString());
 
+		Employee obj5 = new Employee(105, "Eee", 20.54);
+		System.out.println(obj5.toString());
+
+		Employee obj6 = new Employee(106, "Fff");
+		System.out.println(obj6.toString());
 	}
 }

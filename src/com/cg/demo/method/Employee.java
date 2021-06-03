@@ -10,8 +10,6 @@ package com.cg.demo.method;
  * We can create our own constructors. 
  * If we create our constructors, Java does not provide any constructors. 
  * 
- * 
- * 
  */
 
 public class Employee {
@@ -24,8 +22,17 @@ public class Employee {
 		System.out.println("default constructor");
 	}
 
+	Employee(int id, String name) {
+		this.id = id;
+		this.name = name;
+		System.out.println("two parameterized constructor");
+	}
+
 	Employee(int id, String name, double salary) {
-		System.out.println("parameterized constructor");
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		System.out.println("three parameterized constructor");
 	}
 
 	@Override
