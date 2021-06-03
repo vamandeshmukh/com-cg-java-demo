@@ -1,5 +1,7 @@
 package com.cg.demo.method;
 
+import java.util.Scanner;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -8,6 +10,7 @@ public class App {
 
 		// Class object = new Constructor();
 		Employee obj = new Employee();
+		
 		obj.id = 101;
 		obj.name = "Abc";
 		obj.salary = 10.5;
