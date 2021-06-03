@@ -19,6 +19,7 @@ public class DemoClass {
 	private int privateField = 40;
 
 	public static void main(String[] args) {
+		
 		DemoClass obj = new DemoClass();
 		System.out.println(obj.publicField);
 		System.out.println(obj.protectedField);

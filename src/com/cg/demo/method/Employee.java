@@ -18,7 +18,7 @@ public class Employee {
 	String name;
 	double salary;
 
-	Employee() {
+	public Employee() {
 		System.out.println("default constructor");
 	}
 
