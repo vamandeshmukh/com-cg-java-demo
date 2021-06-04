@@ -9,7 +9,13 @@ class Phone {
 	void sms() {
 		System.out.println("Sending SMS...");
 	}
+}
 
+class FeaturePhone extends Phone {
+
+	void music() {
+		System.out.println("Playing music...");
+	}
 }
 
 public class PhoneDemo {
@@ -19,7 +25,10 @@ public class PhoneDemo {
 		Phone phone = new Phone();
 		phone.call();
 		phone.sms();
+		FeaturePhone featurePhone = new FeaturePhone();
+		featurePhone.music();
+		featurePhone.call();
+		featurePhone.sms();
 
 	}
-
 }
