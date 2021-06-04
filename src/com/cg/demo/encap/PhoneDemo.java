@@ -1,6 +1,6 @@
 package com.cg.demo.encap;
 
-class Phone {
+class Phone { // parent class / super class
 
 	void call() {
 		System.out.println("Calling...");
@@ -11,10 +11,16 @@ class Phone {
 	}
 }
 
-class FeaturePhone extends Phone {
+class FeaturePhone extends Phone { // child class / sub class
 
 	void music() {
 		System.out.println("Playing music...");
+	}
+}
+
+class SmartPhone extends FeaturePhone {
+	void camera() {
+		System.out.println("Snap pics...");
 	}
 }
 
@@ -29,6 +35,11 @@ public class PhoneDemo {
 		featurePhone.music();
 		featurePhone.call();
 		featurePhone.sms();
+		SmartPhone smartPhone = new SmartPhone();
+		smartPhone.camera();
+		smartPhone.call();
+		smartPhone.sms();
+		smartPhone.music();
 
 	}
 }
