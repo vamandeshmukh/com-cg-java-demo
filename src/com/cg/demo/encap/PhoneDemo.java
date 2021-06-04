@@ -7,6 +7,7 @@ public class PhoneDemo {
 		Phone phone = new Phone();
 		phone.call();
 		phone.sms();
+//		phone.music();
 		FeaturePhone featurePhone = new FeaturePhone();
 		featurePhone.music();
 		featurePhone.call();
