@@ -42,7 +42,9 @@ public class ObjectDemo {
 
 		College1 collegeStudent1 = new College1();
 		College2 collegeStudent2 = new College2();
+
 //		collegeStudent1 = collegeStudent2;
+
 		collegeStudent1.getDegree();
 		collegeStudent1.learnSubject1();
 		collegeStudent2.getDegree();
@@ -56,7 +58,10 @@ public class ObjectDemo {
 
 		universityStudent1 = universityStudent2;
 		universityStudent1.getDegree();
+
 //		universityStudent1.learnSubject1();
+		((College1) universityStudent1).learnSubject1();
+
 		universityStudent2.getDegree();
 //		universityStudent2.learnSubject2();
 

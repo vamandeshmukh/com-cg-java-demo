@@ -12,7 +12,7 @@ class ClassTwo {
 	}
 
 	public void anotherMethod(ClassOne obj) {
-		System.out.println(obj.hashCode());
+		System.out.println(obj.toString());
 	}
 
 	public int m1(int num) {
@@ -29,7 +29,6 @@ public class ReturnDemo {
 
 		ClassTwo classTwo = new ClassTwo();
 		classTwo.anotherMethod(classOne);
-		
 
 	}
 
