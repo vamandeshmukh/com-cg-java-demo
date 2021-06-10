@@ -1,6 +1,8 @@
 package com.cg.demo.col;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ColDemo {
 
@@ -24,7 +26,15 @@ public class ColDemo {
 		myList.add(20.75);
 		myList.add("Abc");
 		System.out.println(myList.size());
+		System.out.println(myList.get(1));
 		System.out.println(myList);
+
+		List list = new ArrayList();
+
+		List list2 = new LinkedList();
+		list = list2;
+//		myList = list2; // CE 
+
 	}
 
 }
