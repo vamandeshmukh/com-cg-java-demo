@@ -6,9 +6,9 @@ public class ColDemo {
 
 	public static void main(String[] args) {
 
-		int[] numArray = new int[5];
-
-		int[] arr = { 10, 20, 30, 40, 50 }; // not growable not shrinkable
+//		int[] numArray = new int[5];
+//
+//		int[] arr = { 10, 20, 30, 40, 50 }; // not growable not shrinkable
 //
 //		System.out.println(arr.length);
 //
