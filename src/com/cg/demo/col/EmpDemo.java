@@ -1,12 +1,6 @@
 package com.cg.demo.col;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Stack;
-import java.util.Vector;
+import java.util.*;
 
 public class EmpDemo {
 
@@ -23,25 +17,24 @@ public class EmpDemo {
 		empList.add(new Employee(104, "Bbb", 45.5));
 
 		System.out.println("Iterate using for loop");
-
 		for (int i = 0; i < empList.size(); i++) {
 			System.out.println(empList.get(i).toString());
 		}
 
 		System.out.println("Iterate using for each loop");
-
 		for (Employee e : empList) {
 			System.out.println(e.toString());
 		}
 
 		System.out.println("Iterate using Iterator");
-
 		Iterator<Employee> iterator = empList.iterator();
-
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next().toString());
 		}
+//		empList.forEach();
 
+		
+		
 		// empList.add("Aaa"); // CE
 //		empList.add(delete); // CE
 
