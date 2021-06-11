@@ -32,6 +32,7 @@ public class ColDemo {
 		List list = new ArrayList();
 
 		List list2 = new LinkedList();
+
 		list = list2;
 //		myList = list2; // CE 
 
