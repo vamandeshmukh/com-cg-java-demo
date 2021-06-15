@@ -9,7 +9,7 @@ public class EmailDemo {
 
 		String email = "sonu.surname@gmail.com";
 //		String regex = "[^\\d][\\w-.]+[@][^\\d][\\w]+[\\.][^\\d][\\w]+";
-		String regex = "[\\D][\\w-.]+[@][\\D][\\w]+[\\.][\\D][\\w]+";
+		String regex = "[\\D][\\w.]+[@][\\D][\\w]+[\\.][\\D][\\w]+";
 
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(email);
