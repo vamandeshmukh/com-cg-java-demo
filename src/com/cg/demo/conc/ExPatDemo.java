@@ -2,6 +2,7 @@ package com.cg.demo.conc;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class ExPatDemo implements Runnable {
 
@@ -38,6 +39,7 @@ public class ExPatDemo implements Runnable {
 		// or to execute periodically.
 
 		ExecutorService exService = Executors.newScheduledThreadPool(3);
+//		ScheduledExecutorService exService = Executors.newScheduledThreadPool(3);
 
 		for (int i = 1; i <= 10; i++) {
 			exService.execute(exp);
