@@ -1,9 +1,8 @@
 package com.cg.demo.stre;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-
+import java.util.ListIterator;
 
 public class ListUpdateDemo {
 
@@ -18,9 +17,11 @@ public class ListUpdateDemo {
 
 		System.out.println(empList);
 
-		Iterator<Employee> it = empList.iterator();
+		ListIterator<Employee> it = empList.listIterator();
+
 		while (it.hasNext()) {
 			it.next().salary += 1000;
+			it.set(e.salary += 1000);
 		}
 		System.out.println(empList);
 
