@@ -16,12 +16,21 @@ public class ExPatDemo implements Runnable {
 		ExPatDemo exp = new ExPatDemo();
 
 		// 1. using newSingleThreadExecutor() method
-		ExecutorService exService = Executors.newSingleThreadExecutor();
+		// creates an Executor that uses a single worker thread operating off an
+		// unbounded queue
+
+//		ExecutorService exService = Executors.newSingleThreadExecutor();
+
+		// 2. using newCachedThreadPool() method
+		// creates a thread pool that creates new threads as needed but will reuse
+		// previously constructed threads when they are available.
+		
+		ExecutorService exService = Executors.newCachedThreadPool();
 
 		for (int i = 1; i <= 10; i++) {
 			exService.execute(exp);
 		}
-
+		exService.shutdown();
 	}
 
 	@Override
@@ -30,5 +39,4 @@ public class ExPatDemo implements Runnable {
 			System.out.println(Thread.currentThread().getName() + " - " + i);
 		}
 	}
-
 }
