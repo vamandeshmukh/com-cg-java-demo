@@ -9,13 +9,14 @@ public class ByteStreamDemo {
 		System.out.println("Start");
 
 		FileInputStream fis = new FileInputStream("sample.txt");
+		
+		
+		
 
 		while (fis.available() > 0) {
 			System.out.print((char) fis.read());
 		}
 		System.out.println("\nEnd");
 		fis.close();
-
 	}
-
 }
