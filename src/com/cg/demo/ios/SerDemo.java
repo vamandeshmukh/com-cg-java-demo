@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class SerDemo {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 
@@ -17,16 +17,34 @@ public class SerDemo {
 		double salary = sc.nextDouble();
 		Employee emp = new Employee(id, name, salary);
 
-		String file = "emp.ser";
-		FileOutputStream fos = new FileOutputStream(file);
-		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		String file = "E:\\dt\\emp.ser";
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		try {
+			fos = new FileOutputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			oos = new ObjectOutputStream(fos);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-		oos.writeObject(emp);
+		try {
+			oos.writeObject(emp);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		System.out.println(emp.toString());
 		System.out.println("Done");
 
-		oos.close();
+		try {
+			oos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		sc.close();
 	}
 }
