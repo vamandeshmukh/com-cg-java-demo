@@ -8,7 +8,8 @@ public class Employee implements Serializable {
 
 	int id;
 	String name;
-	double salary;
+//	double salary;
+	transient double salary;
 
 	public Employee() {
 		super();

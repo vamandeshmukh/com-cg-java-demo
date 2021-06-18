@@ -18,8 +18,8 @@ public class SerDemo {
 		Employee emp = new Employee(id, name, salary);
 		System.out.println("Enter file name:");
 
-//		String file = sc.next();
-		String file = "E:\\vaman\\emp.ser";
+		String file = sc.next();
+//		String file = "E:\\vaman\\emp.ser";
 
 		FileOutputStream fos = null;
 		ObjectOutputStream oos = null;

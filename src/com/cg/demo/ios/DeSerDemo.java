@@ -1,19 +1,16 @@
 package com.cg.demo.ios;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 
 public class DeSerDemo {
 
 	public static void main(String[] args) {
-
-		String file = "Sonu.ser";
+		
+		String file = "Tonu.ser";
 		FileInputStream fis = null;
 		ObjectInputStream ois = null;
 		Employee emp = null;
+
 		try {
 			fis = new FileInputStream(file);
 		} catch (FileNotFoundException e) {
@@ -33,5 +30,4 @@ public class DeSerDemo {
 		}
 		System.out.println(emp.toString());
 	}
-
 }
