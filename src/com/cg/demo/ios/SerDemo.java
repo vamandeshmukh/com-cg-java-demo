@@ -16,8 +16,11 @@ public class SerDemo {
 		System.out.println("Enter salary: ");
 		double salary = sc.nextDouble();
 		Employee emp = new Employee(id, name, salary);
+		System.out.println("Enter file name:");
 
-		String file = "E:\\dt\\emp.ser";
+//		String file = sc.next();
+		String file = "E:\\vaman\\emp.ser";
+
 		FileOutputStream fos = null;
 		ObjectOutputStream oos = null;
 		try {
