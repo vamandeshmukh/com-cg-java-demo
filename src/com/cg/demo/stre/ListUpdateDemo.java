@@ -21,7 +21,6 @@ public class ListUpdateDemo {
 
 		while (it.hasNext()) {
 			it.next().salary += 1000;
-			it.set(e.salary += 1000);
 		}
 		System.out.println(empList);
 
