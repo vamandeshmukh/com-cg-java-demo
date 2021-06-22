@@ -15,7 +15,6 @@ public class App2 {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 			System.exit(0);
 		}
-		System.out.println("Opened database successfully");
 		stmt = c.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM emp");
 		while (rs.next()) {
