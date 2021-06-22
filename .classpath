@@ -6,5 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/delete7/slf4j.jar/slf4j.jar"/>
+	<classpathentry kind="lib" path="E:/Apps_and_EXEs/postgresql-42.2.22.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

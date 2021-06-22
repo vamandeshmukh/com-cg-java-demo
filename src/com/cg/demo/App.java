@@ -8,12 +8,9 @@ public class App {
 
 	public static void main(String[] args) {
 
+		System.out.println("Start");
 		int num = 10;
-//  keyword 	identifier  operator 		literal 	separator 
-//  (datatype)  (variable)  (assignment)	(value)		(semicolon)
-
 		System.out.println(num);
-
+		System.out.println("End");
 	}
-
 }
