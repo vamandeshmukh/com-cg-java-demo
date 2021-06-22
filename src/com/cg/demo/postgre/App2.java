@@ -27,7 +27,6 @@ public class App2 {
 			System.out.println("ENAME = " + ename);
 			System.out.println("SALARY = " + salary);
 			System.out.println("DID = " + did);
-			System.out.println();
 		}
 	}
 }
